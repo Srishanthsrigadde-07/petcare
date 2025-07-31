@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rescue</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+
+        .navbar {
+            background: #ff6f61;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo img {
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .hero {
+            background: url('25.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: black;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 20px 0;
+            color: black;
+        }
+
+        .btn {
+            background: white;
+            padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 20px;
+            transition: 1.05s;
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .pets-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #ff6f61;
+            padding: 25px;
+        }
+
+        .pet-card {
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .pet-card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+        }
+
+        .fund-form input,
+        .fund-form textarea {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .fund-form button {
+            padding: 10px;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        .navbar ul li a:hover {
+            color: yellow;
+            background-color: blue;
+            transition: 0.5s;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        .btn:hover {
+            background-color: blue;
+            text-shadow: black;
+            transition: 0.3s;
+            transform: scale(1.05);
+            font-weight: 600;
+        }
+
+        .fund-form button:hover {
+            background-color: blue;
+            color: yellow;
+            transition: 0.5s;
+            transform: scale(1.05);
+            font-weight: 600;
+        }
+
+        .pet-card:hover {
+            transition: 0.1s;
+            cursor: pointer;
+            transform: scale(1.05);
+            background: yellow;
+        }
+
+        .logo img:hover {
+            background-color: black;
+            border-radius: 50px;
+            padding: 5px;
+            transition: 0.5s;
+        }
+
+        .pet-card button {
+            background-color: black;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .pet-card button:hover {
+            background-color: yellow;
+            color: blue;
+        }
+
+        .logo:hover {
+            color: black;
+            font-family: sans-serif;
+            font-size: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">PetRescue</div>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html#pets">Available Pets</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#funds">Funds</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to PetRescue</h1>
+        <p>You can't Change the dog's past, But you can Rewrite the Future.</p>
+        <a href="http://127.0.0.1:5500/index.html#pets" class="btn">Start Rescue</a>
+    </section>
+
+    <section id="pets" class="section">
+        <h2>Available Pets</h2>
+        <div class="pets-container">
+            <div class="pet-card">
+                <img src="./index_files/12.jpg" alt="Buddy">
+                <h3>Buddy</h3>
+                <h4>Nickname: Bud</h4>
+                <p>Age: 2 years</p><br>
+                <button type="submit">Rescue Pet</button>
+            </div>
+            <div class="pet-card">
+                <img src="./index_files/13.jpg" alt="Luna">
+                <h3>Luna</h3>
+                <h4>Nickname: Lulu</h4>
+                <p>Age: 1 year</p><br>
+                <button type="submit">Rescue Pet</button>
+            </div>
+            <div class="pet-card">
+                <img src="./index_files/14.jpg" alt="Charlie">
+                <h3>Charlie</h3>
+                <h4>Nickname: Chaz</h4>
+                <p>Age: 3 years</p><br>
+                <button type="submit">Rescue Pet</button>
+            </div>
+            <div class="pet-card">
+                <img src="./index_files/12.jpg" alt="Snoopy">
+                <h3>Snoopy</h3>
+                <h4>Nickname: Snoop</h4>
+                <p>Age: 2 years</p><br>
+                <button type="submit">Rescue Pet</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="funds" class="section">
+        <div class="fund">
+            <h2>Fund Our Cause</h2>
+            <form class="fund-form" id="donationForm">
+                <input type="text" placeholder="Your Name" required="">
+                <input type="number" placeholder="Donation Amount" required="">
+                <button type="submit">Donate</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h1>Contact Us</h1>
+        <p>Email: petrescue@gamil.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+
+    <script>
+        document.getElementById("donationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = this.querySelector('input[type="text"]').value;
+            const amount = this.querySelector('input[type="number"]').value;
+
+            if (name && amount) {
+                alert(Thank you, ${name}! You donated ₹${amount} to PetRescue.);
+                this.reset();
+            } else {
+                alert("Please fill out both fields before donating.");
+            }
+        });
+    </script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
